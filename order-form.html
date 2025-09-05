@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Simply Dieblicious Order Form </title>
+        <link rel="stylesheet" href="order-form-style.css">
+    </head>
+    <body>
+        
+        <form action="https://formspree.io/f/xqadggzb" method="post">
+            <input type="hidden" name="_redirect" value="thankyou.html">
+            <div class="fall-banner">
+  <span class="emoji">🍪</span>
+  <span class="emoji">🍂</span>
+  <span class="emoji">☕</span>
+</div>
+
+            <h1>Simply Dieblicious Order Form</h1>
+            <p>Place your sweet orders below!</p>
+
+
+                         <!-- Name & Email -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="customerName" placeholder="jane doe" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="janedoe123@gmail.com" required>
+            <hr>
+
+                 <!-- Cookies Section -->
+        <fieldset>
+            <legend>Cookies</legend>
+
+            <label for="cookieFlavor">Flavor:</label>
+             <select id="cookieFlavor" name="cookieFlavor">
+               <option value="">None</option>
+               <option value="Chocolate Chip - $1 each">Chocolate Chip</option>
+               <option value="Sugar - $1 each">Sugar</option>
+            </select>
+
+            <div class="radio-group">
+                <label><input type="radio" name="cookieQuantity" value="1 cookie - $1"> 1 cookie - $1</label>
+                <label><input type="radio" name="cookieQuantity" value="6 cookies - $6"> 6 cookies - $6</label>
+                <label><input type="radio" name="cookieQuantity" value="12 cookies - $12"> 12 cookies - $12</label>
+            </div>
+        </fieldset>
+                <hr>
+
+
+            <!-- Banana Bread Section -->
+        <fieldset>
+            <legend>Banana Bread</legend>
+            <label for="bananabreadFlavor">Flavor:</label>
+             <select id="bananabreadFlavor" name="bananabreadFlavor">
+                <option value="">None</option>
+                <option value="Chocolate Chip - $1 each">Chocolate Chip</option>
+                <option value="Cinnamon Swirl - $1 each">Cinnamon Swirl</option>
+                <option value="Classic - $1 each">Classic</option>
+            </select>
+
+            <div class="radio-group">
+                <label><input type="radio" name="bananabreadQuantity" value="1 slice - $2">1 slice - $2</label>
+                <label><input type="radio" name="bananabreadQuantity" value="1/2 loaf - $6">1/2 loaf - $6</label>
+                <label><input type="radio" name="bananabreadQuantity" value="full loaf - $10">full loaf - $10</label>
+            </div>
+        </fieldset>
+            <hr>
+             
+            <!-- Muffins -->
+        <fieldset>
+            <legend>Muffins</legend>
+            <label for="muffinFlavor">Flavor:</label>
+             <select id="muffinFlavor" name="muffinFlavor">
+                <option value="">None</option>
+                <option value="Blueberry - 6/$5">Blueberry</option>
+                <option value="Chocolate Chip - 6/$5">Chocolate Chip</option>
+                <option value="Pumpkin Spice - 6/$5">Pumpkin Spice</option>
+              </select>
+
+              <div class="radio-group">
+                <label><input type="radio" name="muffinQuantity" value="1/2 dozen - $5">1/2 dozen - $5</label>
+                <label><input type="radio" name="muffinQuantity" value="1 dozen - $10">1 dozen - $10</label>
+              </div>
+        </fieldset>
+              <hr>
+        
+             <!-- Cupcakes -->
+        <fieldset>
+               <legend>Cupcakes</legend>
+              <select id="cupcakeFlavor" name="cupcakeFlavor">
+                <option value="">None</option>
+                <option value="Vanilla - 6/$6"> Vanilla</option>
+                <option value="Chocolate - 6/$6">Chocolate</option>
+                <option value="Red Velvet - 6/$6">Red Velvet</option>
+              </select>
+
+              <div class="radio-group">
+                <label><input type="radio" name="cupcakeQuantity" value="1/2 dozen - $6">1/2 dozen - $6</label>
+                <label><input type="radio" name="cupcakeQuantity" value="1 dozen - $10">1 dozen - $10</label>
+              </div>
+        </fieldset>
+              <hr>
+
+             <!-- Pickup Info -->
+              <label for="pickup">Pickup Date:</label>
+              <input type="date" id="pickup" name="pickup" required>
+              <label for="requests">Special Request:</label>
+              <textarea id="requests" name="requests" placeholder="Any dietary restrictions or notes"></textarea>
+              <hr>
+              <!--Payment Info-->
+              <label>Payment Method:</label>
+              <div class="radio-group">
+                <label><input type="radio" name="payment" value="zelle" required>Zelle</label>
+                <label><input type="radio" name="payment" value="paypal">Paypal</label>
+                <label><input type="radio" name="payment" value="cashapp">Cashapp</label>
+              </div>
+
+             <!--Submit Button -->
+             <button type="submit">Submit Order</button>
+
+        </form>
+
+    </body>
+</html>
