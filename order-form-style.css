@@ -21,6 +21,11 @@ body{
     min-height:100vh;
     padding: 40px;
 }
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
 form{
     background-color: #F9F5F0;
     border:2px solid #deb887;
